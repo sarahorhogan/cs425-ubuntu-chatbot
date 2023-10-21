@@ -1,0 +1,42 @@
+Level Path Navlink
+3 tools-etckeeper etckeeper
+3 pam-motd pam_motd
+3 tools-puppet Puppet
+Redirects
+Mapping table
+Path Location
+/server/docs/introduction Ubuntu Server documentation
+/server/docs/installation-advanced Advanced Installation
+/server/docs/installation-iscsi Installation - iSCSI
+/server/docs/security-ecryptfs eCryptfs is deprecated
+This section of our documentation contains step-by-step tutorials to help outline what Ubuntu Server is capable of
+while helping you achieve specific aims.
+We hope our tutorials make as few assumptions as possible and are broadly accessible to anyone with an interest in
+Ubuntu Server. They should also be a good place to start learning about Ubuntu Server in general, how it works, and
+what it’s capable of.
+Core tutorial
+In our core tutorial , you will learn how to set up an Ubuntu Server; from installing using a bootable USB device, to
+navigating the Server installer menu.
+Getting started
+Basic installation
+The Server installer
+How to operate the Server installer
+Screen-by-screen installer guide
+Configuring storage
+Next steps
+Once your Ubuntu Server is up and running, you may be interested in this collection of related tutorials and topics
+that will help you learn more about how it works and what’s available to you. These pages can be viewed in any order.
+Ubuntu Pro
+Attach your Ubuntu Pro subscription
+The Server installer
+Report a problem with the installer
+If you have a specific goal, but are already familiar with Ubuntu Server, take a look at our How-toguides. These have
+more in-depth detail and can be applied to a broader set of applications.
+Take a look at our Reference section when you need to determine what commands are available, and how to interact
+with various tools.
+Finally, forabetterunderstandingofhowUbuntuServerworksandhowitcanbeusedandconfigured, our Explanation
+section enables you to expand your knowledge of the operating system and additional software.
+This chapter provides an overview of how to install Ubuntu Server Edition. You can also refer to this guide on how to
+operate the installer for more information on using the installer, and to this screen-by-screen reference guide for more
+information about each of the installer screens.
+5
