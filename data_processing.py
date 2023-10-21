@@ -17,6 +17,7 @@ with open('Ubuntu-dialogue-corpus/dialogueText.csv', mode='r', encoding='utf-8')
         if dialogueID not in dialogues:
             dialogues[dialogueID] = {'questions': [], 'answers': []}
             person_asking = sender 
+            person_answering = None
             current_turn = 0 
             current_dialogue = dialogueID 
         
@@ -31,8 +32,19 @@ with open('Ubuntu-dialogue-corpus/dialogueText.csv', mode='r', encoding='utf-8')
             else:
                 dialogues[dialogueID]['questions'][current_turn] += ' ' + text
         else:
-            # Append to the question
-            dialogues[dialogueID]['answers'].append(text)
+            # Append to the answer
+            if len(dialogues[dialogueID]['answers']) == 0:
+                person_answering = sender
+                dialogues[dialogueID]['answers'].append(text)
+            else:
+                if person_answering != sender:
+                    question = dialogues[dialogueID]['questions'][-1]
+                    dialogues[dialogueID]['questions'].append(question)
+                    dialogues[dialogueID]['answers'].append(text)
+                    person_answering = sender
+                else:
+                    dialogues[dialogueID]['answers'][-1] += ' ' + text
+
         
 
 output_file = 'dialogue_pairs.csv'
