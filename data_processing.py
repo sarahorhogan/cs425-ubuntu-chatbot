@@ -4,7 +4,7 @@ import csv
 dialogues = {}
 
 # Read the CSV file
-with open('Ubuntu-dialogue-corpus/dialogueText.csv', mode='r', encoding='utf-8') as file:
+with open('dialogueText.csv', mode='r', encoding='utf-8') as file:
     csv_reader = csv.reader(file)
     
     current_dialogue = None
